@@ -5,7 +5,7 @@ Content-Type: multipart/form-data; boundary=WebAppBoundary
 --WebAppBoundary
 Content-Disposition: form-data; name="title"
 
-Cloud Next 2027
+Cloud Next 2025
 --WebAppBoundary
 Content-Disposition: form-data; name="description"
 
@@ -17,7 +17,7 @@ Cloud Next 2025 highlights the latest in cloud-native development, Kubernetes, A
 --WebAppBoundary
 Content-Disposition: form-data; name="image"; filename="event-full.png"
 
-< ./public/images/event-full.png
+< ./public/images/event2.png
 #--WebAppBoundary
 #Content-Disposition: form-data; name="image"
 #
@@ -59,3 +59,9 @@ Content-Disposition: form-data; name="tags"
 
 ["Cloud","DevOps","Kubernetes","AI"]
 --WebAppBoundary--
+
+### get events
+GET http://localhost:3000/api/events
+
+### get event by slug
+GET http://localhost:3000/api/events/cloud-next-2027

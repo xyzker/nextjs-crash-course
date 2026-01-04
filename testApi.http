@@ -5,7 +5,7 @@ Content-Type: multipart/form-data; boundary=WebAppBoundary
 --WebAppBoundary
 Content-Disposition: form-data; name="title"
 
-Cloud Next 2026
+Cloud Next 2027
 --WebAppBoundary
 Content-Disposition: form-data; name="description"
 
@@ -15,9 +15,13 @@ Content-Disposition: form-data; name="overview"
 
 Cloud Next 2025 highlights the latest in cloud-native development, Kubernetes, AI, and enterprise scalability. Developers, architects, and executives gather to learn about new Google Cloud services, best practices, and success stories.
 --WebAppBoundary
-Content-Disposition: form-data; name="image"
+Content-Disposition: form-data; name="image"; filename="event-full.png"
 
-https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340
+< ./public/images/event-full.png
+#--WebAppBoundary
+#Content-Disposition: form-data; name="image"
+#
+#https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340
 --WebAppBoundary
 Content-Disposition: form-data; name="venue"
 
